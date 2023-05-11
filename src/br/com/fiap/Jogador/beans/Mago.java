@@ -17,7 +17,7 @@ public class Mago extends Jogador implements Visualizavel {
 
     public void ataqueMagico(Jogador jogador) {
         if (this.mp >= 10) {
-            jogador.receberDano(this.getMp());
+            jogador.receberDano(this.getMp() * 2);
             this.mp -= 10;
         }
         if (jogador.getHp() <= 0) {
@@ -30,7 +30,7 @@ public class Mago extends Jogador implements Visualizavel {
         if (this.getHp() > hp) {
             this.receberDano(hp);
             this.mp += hp;
-        }   
+        }
     }
 
     public int getMp() {
