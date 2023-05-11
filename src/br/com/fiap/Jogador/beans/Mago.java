@@ -8,11 +8,15 @@ public class Mago extends Jogador implements Visualizavel {
     public Mago() {
         super();
         this.mp = 100;
+        this.x = 0;
+        this.y = 0;
     }
 
     public Mago(String nome) {
         super(nome);
         this.mp = 100;
+        this.x = 0;
+        this.y = 0;
     }
 
     public void ataqueMagico(Jogador jogador) {

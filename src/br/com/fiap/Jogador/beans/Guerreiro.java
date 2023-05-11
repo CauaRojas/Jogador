@@ -3,6 +3,16 @@ package br.com.fiap.Jogador.beans;
 public class Guerreiro extends Jogador implements Visualizavel {
     private int x;
     private int y;
+    public Guerreiro() {
+        super();
+        this.x = 0;
+        this.y = 0;
+    }
+    public Guerreiro(String nome) {
+        super(nome);
+        this.x = 0;
+        this.y = 0;
+    }
 
     public int getX() {
         return x;
