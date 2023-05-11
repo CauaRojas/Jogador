@@ -57,7 +57,7 @@ public class Jogador {
     }
 
     public void atacar(Jogador jogador) {
-        int pontosDano = this.xp;
+        int pontosDano = this.getXp();
         jogador.receberDano(pontosDano);
 
         if (jogador.getHp() <= 0) {
